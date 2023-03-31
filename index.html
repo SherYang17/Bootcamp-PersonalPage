@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-   
-
+    <link rel="stylesheet" href="styles.css">
+    
 
 </head>
-  <body>
+<body>
 <!-- Navbar START-->
 <!-- https://getbootstrap.com/docs/5.3/components/navbar/#nav -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Sher's Page</a>
+      <a class="navbar-brand" href="index.html">Sher's Page</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,26 +38,7 @@
 
 
 
-<!-- Header Section START-->
-  <section class="hero-section">
-    <div class="container-fluid px-0">
-      <div class="row g-0">
-        <div class="col-lg-12">
-                        <!-- To make image float left <div class="hero-image position-relative">-->
-          <div class="hero-image position-relative d-flex justify-content-center align-items-center">
-            <img src="https://rare-gallery.com/uploads/posts/342299-Digital-Art-Lofi-Girls-Studying-Hip-Hop-Radio-Headphone.jpg" class="img-fluid" alt="Main Image">
-                        <!-- To center its <div class="hero-text position-absolute bottom-50 start-50 translate-middle text-center">-->
-            <div class="hero-text position-absolute bottom-0 start-0 text-start p-5">
-              <h1 class="text-white">Welcome!</h1>
-              <p class="text-white">Enjoy the stay!</p>
-              <a href="#" class="btn btn-primary mt-3 ms-3">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- Header Setion END-->
+
 
 
 <!-- About Section-->
@@ -112,7 +93,7 @@
                         <p class="card-text">In this assignment, I was learning for the first time how to make a website responsive.
                         </div>
                     <div class="my-container d-flex flex-column mt-auto">
-                        <div class="my-element align-self-end pb-1" style="background-color: ">
+                        <div class="my-element align-self-end pb-1">
                             <button type="button" class="btn btn-light align-self-end"><a href="https://sheryang17.github.io/UsingBootstrap/" style="text-decoration: none;">Open Project</a></button>
                             <button type="button" class="btn btn-light align-self-end"><a href="https://github.com/SherYang17/UsingBootstrap"style="text-decoration: none;">Source Code</a></button>
                         </div>
@@ -131,25 +112,70 @@
         </div>
         <br>
     </div>
+</div>
 
 
-    <div>Contact me here</div>
+<!-- Contact Section-->>
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 mb-md-0 mb-5">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me!</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Please reach out if you are down to play L4D2 or have any questions!</p>
+      
+            <form id="contact-form" name="contact-form" action="" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="name" name="name" class="form-control">
+                    <label for="name" class="">Your name</label>
+                  </div>
+                </div>
+      
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="email" name="email" class="form-control">
+                    <label for="email" class="">Your email</label>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="subject" name="subject" class="form-control">
+                    <label for="subject" class="">Subject</label>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                    <label for="message">Your message</label>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="text-center">
+                <button class="btn btn-primary" onclick="return false;">Send</button>
+              </div>
+              <div class="status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+<br>
+<!--Section: Contact v.2-->
 
 
-<!-- Footer Section START-->
-    <footer class="text-center text-dark" style="background-color: #f1f1f1;">
-      <section class="mb-4">
-     </div>
-  
-
-    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    
-
-  </footer>
 <!-- Footer Section END-->
+<footer>
+    <div class="container-fluid text-center p-3 text-center text-dark" style="background-color: #f1f1f1;">
+        © 2020 Copyright: Sher Yang
+    </div>
+</footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
